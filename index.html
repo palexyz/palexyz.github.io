@@ -9,9 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style>
     body{
     font-family: Roboto;
+    background-color: #2a2a2a;
+    color: #fff;
     }
     #myprofile {
     width: 200px;
@@ -25,6 +28,18 @@
     .header{
     text-align: center;
     }
+    .projectImg{
+    display: inline-block;
+    }
+    .card{
+    background-color: #82828257;
+    border: 1px solid rgb(255, 193, 7);
+    }
+    .fa-brands{
+    color:rgb(255, 193, 7);
+    font-size: 30px;
+    margin: 10px;
+    }
   </style>
 
 </head>
@@ -32,7 +47,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-8 rounded border border-black header offset-md-2">
+      <div class="col-md-8 rounded border border-warning header offset-md-3">
           <img src="https://palexyz.github.io/gamera.jpg" id = "myprofile">
           <h1>Alexander Paries</h1>
 
@@ -47,20 +62,33 @@
 <div class="container">
 
 
-      <div class="row">
-          <div class="col-md-12">
+      <div class="row"> 
+          <div class="col-md-11 offset-md-1">
             <div class="card">
               <h3 class="card-header">Park Pallette</h3>
               <div class="card-block">
-              <img src="https://palexyz.github.io/Park.png" class="projectImg">
+                <div class="row">
+                  <div class="col-md-2">
+                    <img src="https://palexyz.github.io/Park.png">
+                  </div>
 
-                <h4 class="card-title">About:</h4>
-                <p class="card-text">Colour detection based parking manager.</p>
-                <a target="_new" href="https://github.com/palexyz/park-pallette" class="btn btn-primary">Github Repository</a>
+                  <div class="col-md-10">
+                    <h4 class="card-title">About:</h4>
+                    <p class="card-text">Colour detection based parking manager.</p>
+                    <a target="_new" href="https://github.com/palexyz/park-pallette" class="btn btn-warning">Github Repository</a>
+
+                  </div>
+
+                </div>
               </div>
             </div>
 
           </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 offset-md-4"">
+          <a href="https://github.com/palexyz"><i class="fa-brands fa-github"></i></a>
+        </div>
       </div>
 </div>
 
